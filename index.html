@@ -44,11 +44,32 @@
     <section id="architettura" class="mb-5">
       <div class="section-container">
         <h2>Architettura</h2>
-        <p>L'architettura del sistema è raffigurata nel seguente diagramma, rappresentante
-            un caso d'uso del sistema.
+        <p>L'architettura del sistema è raffigurata nel seguente diagramma:
         </p>
-        <img src="images/flussoUseCase.png" alt="Architettura" style="width: 100%; height: auto;">
-        <p>(Aggiungere spiegazione)
+        <img src="images/architettura.png" alt="Architettura" style="width: 70%; height: auto;">
+        <p>I servizi vengono eseguiti su macchine AWS, raggiungibili tramite API Gateway.
+          I servizi sono:
+          <ul>
+            <li>UserServiceProject: gestisce l'autenticazione e la gestione degli utenti.</li>
+            <li>TripServiceProject: gestisce la gestione delle tappe.</li>
+            <li>ModelServiceProject: gestisce la gestione dei modelli.</li>
+          </ul>
+        </p>
+        <p>Di seguito è riportato un diagramma che comprende 3 fasi, rappresentanti
+          un caso d'uso del sistema.
+        </p>
+        <img src="images/flussoUseCase.png" alt="Caso d'uso" style="width: 70%; height: auto;">
+        <p>Spiegazione del diagramma:
+          <ul>
+            <li>Fase 1: L'utente prenota una corsa attraverso il chatbot.</li>
+            <li>Fase2: l'utente scannerizza il QR code presente nel veicolo, e in questo modo
+              viene automaticamente inizializzata la corsa e mandata un'email di localizzazione al parente.
+             </li>
+            <li>Fase3: una volta arrivati a destinazione, l'anziano scende dal veicolo, e l'autista
+              clicca sull'apposito pulsante di "fine corsa". Di conseguenza viene terminata la corsa
+            dal punto di vista del funzionamento dell'app, e viene mandata un'altra eamil di localizzazione
+          al paretnte dell'anziano.</li>
+          </ul>
         </p>
       </div>
     </section>
@@ -90,9 +111,11 @@
     <section id="demo" class="mb-5">
       <div class="section-container">
         <h2>Demo</h2>
-        <p>Video presentativo dell'applicazione</p>
         <div class="ratio ratio-16x9 my-4" style="max-width: 700px; margin-left: auto; margin-right: auto;">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Demo App" allowfullscreen></iframe>
+          <video controls style="width: 100%; height: auto;">
+            <source src="video/DemoTaxiSociale.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+          </video>
         </div>
       </div>
     </section>
@@ -101,15 +124,13 @@
         <h2>Team</h2>
         <div class="row justify-content-center">
           <div class="col-12 col-md-5 col-lg-4 d-flex justify-content-center mb-4">
-            <div class="card text-center p-3" style="width: 320px; height: 320px; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-              <img src="https://via.placeholder.com/120" class="rounded-circle mx-auto mt-3 mb-3" alt="Foto Luigi Roberti" style="width: 120px; height: 120px; object-fit: cover;">
+            <div class="card text-center p-3" style="width: 320px; height: 180px; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
               <h5 class="fw-bold mb-2">Luigi Roberti</h5>
               <p class="mb-1">luigi.roberti@studenti.unisalento.it</p>
             </div>
           </div>
           <div class="col-12 col-md-5 col-lg-4 d-flex justify-content-center mb-4">
-            <div class="card text-center p-3" style="width: 320px; height: 320px; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-              <img src="https://via.placeholder.com/120" class="rounded-circle mx-auto mt-3 mb-3" alt="Foto Cristian Golia" style="width: 120px; height: 120px; object-fit: cover;">
+            <div class="card text-center p-3" style="width: 320px; height: 180px; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
               <h5 class="fw-bold mb-2">Cristian Golia</h5>
               <p class="mb-1">cristian.golia@studenti.unisalento.it</p>
             </div>
