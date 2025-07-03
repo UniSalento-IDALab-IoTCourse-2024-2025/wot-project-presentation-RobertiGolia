@@ -5,9 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentazione Progetto</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div id="center-text">hello worlddd</div>
-    <script src="script.js"></script>
+  <nav id="main-navbar" class="navbar navbar-expand-lg" style="background-color: #0073ff;">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <span class="navbar-brand fw-bold text-white ms-2" style="font-size: 2rem;">Taxi sociale</span>
+      <span style="background: #fff; border-radius: 12px; padding: 6px; display: inline-block;">
+        <img src="images/icon5.png" alt="Logo" style="height: 48px; width: 48px; object-fit: contain; display: block;">
+      </span>
+      <ul class="navbar-nav ms-auto flex-row gap-3">
+        <li class="nav-item"><a class="nav-link text-white" href="#presentazione">Presentazione</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#architettura">Architettura</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#funzionalita">Funzionalità</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#demo">Demo</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#team">Team</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container py-5">
+    <section id="presentazione" class="mb-5">
+      <div class="section-container">
+        <h2>Presentazione</h2>
+        <p>Taxi sociale è un'app sviluppata per favorire lo spostamento di persone che non possono
+            mettersi alla guida. 
+        </p>
+        <p>È stato pensato per favorire la user experience, rendendo il processo di richiesta di un taxi sociale semplice e veloce.
+        </p>
+        <p>Repository GitHub: </p>
+        <ul>
+          <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2024-2025/wot-project-2024-2025-frontend-RobertiGolia" target="_blank">Front end</a></li>
+          <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2024-2025/wot-project-2024-2025-UserServiceProject-RobertiGolia" target="_blank">UserServiceProject</a></li>
+          <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2024-2025/wot-project-2024-2025-TripServiceProject-RobertiGolia" target="_blank">TripServiceProject</a></li>
+          <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2024-2025/wot-project-2024-2025-ModelServiceProject-RobertiGolia" target="_blank">ModelServiceProject</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="architettura" class="mb-5">
+      <div class="section-container">
+        <h2>Architettura</h2>
+        <p>L'architettura del sistema è raffigurata nel seguente diagramma, rappresentante
+            un caso d'uso del sistema.
+        </p>
+        <img src="images/flussoUseCase.png" alt="Architettura" style="width: 100%; height: auto;">
+        <p>(Aggiungere spiegazione)
+        </p>
+      </div>
+    </section>
+    <section id="funzionalita" class="mb-5">
+      <div class="section-container">
+        <h2>Funzionalità</h2>
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <p>In questa sezione verranno spiegate la varie funzionalità
+                dell'app, con le relative schermate.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 d-flex justify-content-center">
+            <div id="carouselFunzionalita" class="carousel slide" data-bs-ride="carousel" style="max-width: 260px;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/im1.PNG" class="d-block w-100 rounded" alt="Screen 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/im2.PNG" class="d-block w-100 rounded" alt="Screen 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/im3.PNG" class="d-block w-100 rounded" alt="Screen 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselFunzionalita" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselFunzionalita" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="demo" class="mb-5">
+      <div class="section-container">
+        <h2>Demo</h2>
+        <p>Video presentativo dell'applicazione</p>
+        <div class="ratio ratio-16x9 my-4" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Demo App" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="mb-5">
+      <div class="section-container">
+        <h2>Team</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-5 col-lg-4 d-flex justify-content-center mb-4">
+            <div class="card text-center p-3" style="width: 320px; height: 320px; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <img src="https://via.placeholder.com/120" class="rounded-circle mx-auto mt-3 mb-3" alt="Foto Luigi Roberti" style="width: 120px; height: 120px; object-fit: cover;">
+              <h5 class="fw-bold mb-2">Luigi Roberti</h5>
+              <p class="mb-1">luigi.roberti@studenti.unisalento.it</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 col-lg-4 d-flex justify-content-center mb-4">
+            <div class="card text-center p-3" style="width: 320px; height: 320px; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <img src="https://via.placeholder.com/120" class="rounded-circle mx-auto mt-3 mb-3" alt="Foto Cristian Golia" style="width: 120px; height: 120px; object-fit: cover;">
+              <h5 class="fw-bold mb-2">Cristian Golia</h5>
+              <p class="mb-1">cristian.golia@studenti.unisalento.it</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
